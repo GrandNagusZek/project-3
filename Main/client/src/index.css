@@ -1,8 +1,8 @@
 :root {
-  --primary: #232F3E;
-  --secondary: #F3A847;
-  --tertiary: #B12704;
-  --light: #fafafa;
+  --primary: #02020B;
+  --secondary: #E6E8E6;
+  --tertiary: #02020B;
+  --light: #F25C54;
   --dark: #272f32;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
@@ -201,6 +201,11 @@ input:focus {
 
 .error-text {
   color: var(--error);
+}
+
+div #category{
+ 
+  width:85%;
 }
 
 @media screen and (max-width: 768px) {
