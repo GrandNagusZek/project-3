@@ -36,6 +36,7 @@ function Detail() {
         _id: product._id,
         price: product.price,
         quantity: product.quantity,
+        description: product.description
       };
       
       setCurrentProduct(item);
@@ -117,6 +118,7 @@ function Detail() {
             src={`/images/${currentProduct.image}`}
             alt={currentProduct.name}
           />
+          <p>{currentProduct.description}</p>
         </div>
       ) : null}
       {loading ? <img src={spinner} alt="loading" /> : null}
