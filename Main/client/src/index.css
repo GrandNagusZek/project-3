@@ -164,7 +164,14 @@ header {
 
 header a {
   color: var(--light);
+  padding-left: 220px; /* Ensure header content does not overlap the navbar */
+  padding-top: 16px; /* Adjust as needed */
+  padding-bottom: 16px; /* Adjust as needed */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
 
 button {
   font-size: 1rem;
@@ -272,10 +279,34 @@ input:focus {
   padding-top: var(--spacing-two);
   padding-bottom: var(--spacing-two);
 }
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -10px; /* Adjust margin to handle spacing between cards */
+}
 
 .card {
   width: 25%;
   text-align: center;
+  transition: transform 0.2s ease-in-out;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10 px; /* Add some margin to separate the cards */
+  padding: 16px;
+}
+.card img {
+  max-width: 100%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slightly scale up the entire card */
+}
+
+.card:hover img {
+  transform: scale(1.1); /* Slightly scale up the image */
 }
 
 .error-text {
@@ -292,3 +323,5 @@ div #category{
     width: 100%;
   }
 }
+
+
