@@ -38,7 +38,7 @@ function Nav() {
           <span role="img" aria-label="shopping bag">
             🛍️
           </span>
-          -Shop-Shop
+          AthleticMia
         </Link>
       </h1>
 

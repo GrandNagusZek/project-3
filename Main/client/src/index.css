@@ -1,8 +1,8 @@
 :root {
-  --primary: #232F3E;
-  --secondary: #F3A847;
-  --tertiary: #B12704;
-  --light: #fafafa;
+  --primary: #02020B;
+  --secondary: #E6E8E6;
+  --tertiary: #02020B;
+  --light: #F25C54;
   --dark: #272f32;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
@@ -28,6 +28,84 @@ body {
   color: var(--dark);
 }
 
+
+/* Navbar container */
+.navbar {
+  width: 200px; /* Set a fixed width for the navbar */
+  background-color: #333;
+  font-family: Arial;
+  position: fixed; /* Fix the navbar to the left side */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scrolling if needed */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  z-index: 1;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  display: block; /* Display links as block elements */
+  font-size: 16px;
+  color: white;
+  text-align: left; /* Align text to the left */
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  display: block; /* Display dropdown as a block element */
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  width: 100%; /* Ensure full width for the dropdown button */
+  text-align: left; /* Align text to the left */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: relative; /* Change to relative for vertical alignment */
+  background-color: #f9f9f9;
+  min-width: 100%; /* Ensure full width for the dropdown content */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 h1,
 h2,
 h3,
@@ -46,6 +124,7 @@ h1 {
 
 h2 {
   font-size: 2rem;
+
 }
 
 h3 {
@@ -85,14 +164,21 @@ header {
 
 header a {
   color: var(--light);
+  padding-left: 220px; /* Ensure header content does not overlap the navbar */
+  padding-top: 16px; /* Adjust as needed */
+  padding-bottom: 16px; /* Adjust as needed */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
 
 button {
   font-size: 1rem;
   text-decoration: none;
   padding: 0.25rem 1rem;
   border-radius: .5rem;
-  border: none;
+  border: 2;
   outline: none;
   cursor: pointer;
   margin: 0 1px;
@@ -193,14 +279,43 @@ input:focus {
   padding-top: var(--spacing-two);
   padding-bottom: var(--spacing-two);
 }
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -10px; /* Adjust margin to handle spacing between cards */
+}
 
 .card {
   width: 25%;
   text-align: center;
+  transition: transform 0.2s ease-in-out;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10 px; /* Add some margin to separate the cards */
+  padding: 16px;
+}
+.card img {
+  max-width: 100%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slightly scale up the entire card */
+}
+
+.card:hover img {
+  transform: scale(1.1); /* Slightly scale up the image */
 }
 
 .error-text {
   color: var(--error);
+}
+
+div #category{
+ 
+  width:85%;
 }
 
 @media screen and (max-width: 768px) {
@@ -208,3 +323,5 @@ input:focus {
     width: 100%;
   }
 }
+
+
