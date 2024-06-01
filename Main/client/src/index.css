@@ -1,5 +1,5 @@
 :root {
-  --primary: #02020B;
+  --primary: #333;
   --secondary: #E6E8E6;
   --tertiary: #02020B;
   --light: #F25C54;
@@ -159,6 +159,11 @@ a:hover {
 }
 
 header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  color:var(--light);
   background: var(--primary);
 }
 
@@ -170,6 +175,56 @@ header a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+header h1{
+margin: 0;
+}
+
+header .flex-row{
+  display: flex;
+  align-items: center;
+width:100%;
+}
+header .flex-grow {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+header .search-bar {
+  width: 60%;
+  padding: 0.5rem;
+  border: 1px solid var(--dark);
+  border-radius: 5px;
+}
+
+header .right-nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 5rem;
+}
+
+.right-nav li {
+  list-style: none;
+  margin-left: 0.1rem;
+}
+
+.right-nav a {
+  color: var(--light);
+  text-decoration: none;
+  padding : 0.25rem 0.5rem;
+}
+
+.right-nav a:hover {
+  text-decoration: underline;
+}
+
+.right-nav li a {
+  color: var(--light);
+  text-decoration: none;
+  font-weight: bold;
 }
 
 
@@ -283,17 +338,18 @@ input:focus {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0 -10px; /* Adjust margin to handle spacing between cards */
+  margin: 10px; /* Adjust margin to handle spacing between cards */
+  padding: 10px;
 }
 
 .card {
-  width: 25%;
+  width: calc(25% - 45px);
   text-align: center;
   transition: transform 0.2s ease-in-out;
   border: 1px solid #ddd;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 10 px; /* Add some margin to separate the cards */
+  margin: 20px; /* Add some margin to separate the cards */
   padding: 16px;
 }
 .card img {
@@ -302,12 +358,13 @@ input:focus {
 }
 
 .card:hover {
-  transform: scale(1.05); /* Slightly scale up the entire card */
+  transform: scale(1.2); /* Slightly scale up the entire card */
 }
 
 .card:hover img {
   transform: scale(1.1); /* Slightly scale up the image */
 }
+
 
 .error-text {
   color: var(--error);

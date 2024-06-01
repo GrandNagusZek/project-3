@@ -26,7 +26,7 @@ db.once('open', async () => {
       image: 'dumbells.jpg',
       category: categories[3]._id,
       price: 149.99,
-      quantity: 120
+      quantity: 120,
     },
     {
       name: 'Multi-color Bumper plates 2.5 lb. - 45 lb.',
