@@ -32,7 +32,37 @@ export default defineConfig({
         },
       ],
     },
-  })],
+    workbox: {
+      runtimeCaching: [
+        {
+          urlPattern: ({ request }) => request.destination === 'document',
+          handler: 'NetworkFirst',
+          options: {
+            cacheName: 'html-cache',
+          },
+        },
+        {
+          urlPattern: ({ request }) => request.destination === 'script' || request.destination === 'style',
+          handler: 'StaleWhileRevalidate',
+          options: {
+            cacheName: 'asset-cache',
+          },
+        },
+        {
+          urlPattern: ({ request }) => request.destination === 'image',
+          handler: 'CacheFirst',
+          options: {
+            cacheName: 'image-cache',
+            expiration: {
+              maxEntries: 50,
+              maxAgeSeconds: 30 * 24 * 60 * 60, // 30 days
+            },
+          },
+        },
+      ],
+    },
+  }),
+],
   server: {
     port: 3000,
     open: true,
@@ -41,11 +71,11 @@ export default defineConfig({
         target: 'http://localhost:3001',
         secure: false,
         changeOrigin: true
-      }
-    }
+      },
+    },
   },
   test: {
     globals: true,
     environment: 'happy-dom'
-  }
-})
+  },
+});
