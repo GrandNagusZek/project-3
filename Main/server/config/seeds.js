@@ -22,16 +22,16 @@ db.once('open', async () => {
     {
       name: 'Dumbbell set  2 lb. - 45-lb',
       description:
-        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+        'The classic dumbell set a must have in your gym. This full set of dumbells are made from chrome plated handles and steel heads wrapped in a NBR and PVC mixture',
       image: 'dumbells.jpg',
       category: categories[3]._id,
       price: 149.99,
       quantity: 120,
     },
     {
-      name: 'Multi-color Bumper plates 2.5 lb. - 45 lb.',
+      name: ' Bumper plates 2.5 lb. - 45 lb.',
       description:
-        'Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.',
+        ' AthelicMIAs plates are equiped with stainless steel hub inserts. They are built for durablility and minimal drop bounce, these quality bumpers are built with a new multi-clor finish to be able to be identified easier from a distance.  ',
       image: 'bumperPlates.jpg',
       category: categories[1]._id,
       price: 369.99,
@@ -41,7 +41,7 @@ db.once('open', async () => {
       name: 'kettle bells 5 lb. - 45 lb.',
       category: categories[3]._id,
       description:
-        'Donec volutpat erat erat, sit amet gravida justo sodales in. Phasellus tempus euismod urna. Proin ultrices nisi ut ipsum congue, vitae porttitor libero suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lacinia a nisi non congue.',
+        'All kettle bells are formed from raw ore into a solid single piece casting with a wobble free base and given a final powder coat and colored bands. ',
       image: 'kettleBells.jpg',
       price: 209.99,
       quantity: 110
@@ -50,15 +50,15 @@ db.once('open', async () => {
       name: 'Barbell clamps',
       category: categories[5]._id,
       description:
-        'Donec volutpat erat erat, sit amet gravida justo sodales in. Phasellus tempus euismod urna. Proin ultrices nisi ut ipsum congue, vitae porttitor libero suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lacinia a nisi non congue.',
+        'Classic spring clamps that have been used and trusted for a very long time these clamps are made of durable steel that will last for a long time.',
       image: 'barbell-Clamps.jpg',
       price: 19.99,
       quantity: 300
     },{
-      name: 'Barbell',
+      name: 'The classic PowerBar',
       category: categories[0]._id,
       description:
-        'Donec volutpat erat erat, sit amet gravida justo sodales in. Phasellus tempus euismod urna. Proin ultrices nisi ut ipsum congue, vitae porttitor libero suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lacinia a nisi non congue.',
+        ' The classic power bar is great for squats, deadlifts and bench pressing. Made from a single piece of steel the power bar is made to withstand all that is thrown at it. ',
       image: 'barbell.jpg',
       price: 119.99,
       quantity: 141
@@ -66,17 +66,16 @@ db.once('open', async () => {
     {
       name: 'Bumper plates 2.5 lb. - 45 lb.',
       description:
-        'Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.',
+        'AthelicMIAs plates are equiped with stainless steel hub inserts. They are built for durablility and minimal drop bounce, these quality bumper plates are a little more subtle than the multi-color plates by only adding color to the letterings.',
       image: 'bumperPlates3.jpg',
       category: categories[1]._id,
       price: 299.99,
       quantity: 25
     },
     {
-      name: 'interlocking foam mats ',
+      name: 'interlocking foam tiles ',
       category: categories[5]._id,
-      description:
-        'Praesent placerat, odio vel euismod venenatis, lectus arcu laoreet felis, et fringilla sapien turpis vestibulum nisl.',
+      description:'Interlocking foam tiles are cut to fit perfectly together. Also Made from durable 2 inch thick foam these tiles will be perfect for absorbing impacts.',
       image: 'locking-matts.jpg',
       price: 49.99,
       quantity: 392
@@ -85,7 +84,7 @@ db.once('open', async () => {
       name: 'foam roller',
       category: categories[5]._id,
       description:
-        'Vivamus ut turpis in purus pretium mollis. Donec turpis odio, semper vel interdum ut, vulputate at ex. Duis dignissim nisi vel tortor imperdiet finibus. Aenean aliquam sagittis rutrum.',
+        'Foam roller made from a thick, durable foam this roller is perfect for a pre workout stretch and many other workouts.',
       image: 'foam-roller.jpg',
       price: 14.99,
       quantity: 124
@@ -94,15 +93,15 @@ db.once('open', async () => {
       name: 'Adjustable rack for bench press/squat rack',
       category: categories[2]._id,
       description:
-        'Vestibulum risus metus, luctus non tortor quis, tincidunt consectetur ex. Nullam vitae lobortis ligula, ut sagittis massa. Curabitur consectetur, tellus at pulvinar venenatis, erat augue cursus erat, eu ullamcorper eros lectus ultrices ipsum. Integer rutrum, augue vitae auctor venenatis, turpis turpis elementum orci, at sagittis risus mi a leo.',
+        'The adjustable rack is made for both benching and squatting, The rack was also made to be space efficient but sturdy like the rest of our products. This rack is made of steel with precicely drilled holes to be able to have multiple heights. ',
       image: 'benchSquatRack.jpg',
       price: 189.99,
       quantity: 30
     },
     {
-      name: 'Multi-color kettleBells 2.5 lb. - 45 lb.',
+      name: 'kettleBells 2.5 lb. - 45 lb.',
       description:
-        'Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.',
+      'All kettle bells are formed from raw ore into a solid single piece casting with a wobble free base and given a final powder coat. ',
       image: 'kettleBells2.jpg',
       category: categories[3]._id,
       price: 249.99,
@@ -111,8 +110,7 @@ db.once('open', async () => {
     {
       name: 'curlbar',
       category: categories[0]._id,
-      description:
-        'In sodales, ipsum quis ultricies porttitor, tellus urna aliquam arcu, eget venenatis purus ligula ut nisi. Fusce ut felis dolor. Mauris justo ante, aliquet non tempus in, tempus ac lorem. Aliquam lacinia dolor eu sem eleifend ultrices. Etiam mattis metus metus. Sed ligula dui, placerat non turpis vitae, suscipit volutpat elit. Phasellus sagittis, diam elementum suscipit fringilla, libero mauris scelerisque ex, ac interdum diam erat non sapien.',
+      description:'The classic curl bar made from the same steel as the power bar.',
       image: 'curlbar.jpg',
       price: 119.99,
       quantity: 30
@@ -120,16 +118,14 @@ db.once('open', async () => {
     {
       name: 'Weight rack ',
       category: categories[2]._id,
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare diam quis eleifend rutrum. Aliquam nulla est, volutpat non enim nec, pharetra gravida augue. Donec vitae dictum neque. Pellentesque arcu lorem, fringilla non ligula ac, tristique bibendum erat. Ut a semper nibh. Quisque a mi et mi tempor ultricies. Maecenas eu ipsum eu enim hendrerit accumsan at euismod urna.',
+      description:'AthleticsMIAs very own weight rack designed to hold all kinds of weights from our own bumper plates, dumbells and kettle bells to any to any brands. Made from steel with bars that can be detached incase they arent being used or want to be swaapped out with any other atachments.',
       image: 'weightrack.jpg',
       price: 89.99,
       quantity: 154
     },
     {
-      name: 'Multi-color Bumper plates 2.5 lb. - 45 lb.',
-      description:
-        'Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.',
+      name: ' Bumper plates 2.5 lb. - 45 lb.',
+      description:'The classic olympic bumper plates. Made of cast iron, these simple and durable plates are always going to be a great option to add to your gym.',
       image: 'bumperPlates7.jpg',
       category: categories[1]._id,
       price: 279.99,
@@ -138,25 +134,25 @@ db.once('open', async () => {
     {
       name: 'Pull up bar',
       category: categories[2]._id,
-      description: 'Ut vulputate hendrerit nibh, a placerat elit cursus interdum.',
+      description: 'The classic pull up bar can be hung on a door or mounted to a wall. This bar is made of steel and has handles for wide pull ups wrapped with foam tips for comfort and a bar in the middle for closer griped pull ups. ',
       image: 'pullupbar.jpg',
       price: 69.99,
       quantity: 101
     },
     {
-      name: 'Punching bag',
+      name: 'Heavy bag bag',
       category: categories[4]._id,
       description:
-        'Sed a mauris condimentum, elementum enim in, rhoncus dui. Phasellus lobortis leo odio, sit amet pharetra turpis porta quis.',
+        'The heavy bag perfect for training. Has dual straps for more of a quite approach than chains, the bag is filled with foam and sand to have the perfect weight.',
       image: 'punchingbag.jpg',
       price: 149.99,
       quantity: 35
     },
     {
-      name: 'Boxing gloves',
+      name: 'Training  gloves',
       category: categories[4]._id,
       description:
-        'Vestibulum et erat finibus erat suscipit vulputate sed vitae dui. Ut laoreet tellus sit amet justo bibendum ultrices. Donec vitae felis vestibulum, congue augue eu, finibus turpis.',
+        'The perfect gloves for training made with superior foam that helps reduce impact on the hand when wearing also have improved wrist wrap to be more stabalization and comfort when training. ',
       image: 'boxinggloves.jpg',
       price: 49.99,
       quantity: 135
@@ -165,7 +161,7 @@ db.once('open', async () => {
       name: 'smith machine multifunctional ',
       category: categories[2]._id,
       description:
-        'Morbi consectetur viverra urna, eu fringilla turpis faucibus sit amet. Suspendisse potenti. Donec at dui ac sapien eleifend hendrerit vel sit amet lectus.',
+        'The ultimate gym machine, this machine mixes various different machines all in one. Made from our fine steel this machine is built to last a lifetime, This machine can target every mucsle group you desire to train, it will also save you tons of space by only needing one machine !',
       image: 'aio.jpg',
       price: 1199.99,
       quantity: 10 

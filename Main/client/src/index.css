@@ -16,6 +16,7 @@
 html,
 body {
   min-height: 100%;
+  margin: 0;
 }
 
 body {
@@ -276,15 +277,24 @@ input:focus {
 }
 
 .container {
-  width: 85%;
+  padding: 1rem;
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+}
+
+.container.my-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .flex-row {
   display: flex;
   flex-wrap: wrap;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
 }
 
 .space-between {
@@ -293,6 +303,56 @@ input:focus {
 
 .flex-end {
   justify-content: flex-end;
+}
+
+.product-detail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.product-image {
+  flex: 1 1 50%;
+  max-width: 50%;
+}
+
+.product-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-info {
+  flex: 1 1 50%;
+  max-width: 50%;
+}
+
+.product-info h2 {
+  margin-top: 0;
+}
+
+.product-info p {
+  font-size: 1.1rem;
+  margin-top: 0;
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.btn-group button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-group button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
 }
 
 .mx-1 {
@@ -375,10 +435,29 @@ div #category{
   width:85%;
 }
 
-@media screen and (max-width: 768px) {
-  .card {
-    width: 100%;
+@media (max-width: 768px) {
+  .product-detail {
+    flex-direction: column;
   }
+
+  .product-image,
+  .product-info {
+    max-width: 100%;
+  }
+
+  .btn-group {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+}
+
+/* Spinner styles */
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 
