@@ -10,7 +10,7 @@ export default defineConfig({
     registerType: 'autoUpdate',
     manifest: {
       name: 'AthleticMia',
-      short_name: 'App',
+      short_name: 'AthleticMia',
       description: 'Exercise equipment for your needs',
       theme_color: '#ffffff',
       icons: [
