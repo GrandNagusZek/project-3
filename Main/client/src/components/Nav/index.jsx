@@ -36,7 +36,7 @@ function Nav() {
         <h1>
           <Link to="/">
             <span role="img" aria-label="shopping bag">
-              🛍️
+              
             </span>
             AthleticMia
           </Link>
