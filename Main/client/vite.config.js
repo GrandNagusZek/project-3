@@ -13,19 +13,24 @@ export default defineConfig({
       short_name: 'AthleticMia',
       description: 'Exercise equipment for your needs',
       theme_color: '#ffffff',
+      background_color: '#ffffff',
+      start_url: '/',
+      display: 'standalone',
+      scope: '/',
+      lang: 'en',
       icons: [
         {
-          src: 'icon-192x192.png',
+          src: '/icon-192x192.png',
           sizes: '192x192',
           type: 'image/png',
         },
         {
-          src: 'icon-512x512.png',
+          src: '/icon-512x512.png',
           sizes: '512x512',
           type: 'image/png',
         },
         {
-          src: 'icon-512x512.png',
+          src: '/icon-512x512.png',
           sizes: '512x512',
           type: 'image/png',
           purpose: 'any maskable',

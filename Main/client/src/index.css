@@ -1,5 +1,5 @@
 :root {
-  --primary: #02020B;
+  --primary: #333;
   --secondary: #E6E8E6;
   --tertiary: #02020B;
   --light: #F25C54;
@@ -16,6 +16,7 @@
 html,
 body {
   min-height: 100%;
+  margin: 0;
 }
 
 body {
@@ -159,6 +160,11 @@ a:hover {
 }
 
 header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  color:var(--light);
   background: var(--primary);
 }
 
@@ -170,6 +176,56 @@ header a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+header h1{
+margin: 0;
+}
+
+header .flex-row{
+  display: flex;
+  align-items: center;
+width:100%;
+}
+header .flex-grow {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+header .search-bar {
+  width: 60%;
+  padding: 0.5rem;
+  border: 1px solid var(--dark);
+  border-radius: 5px;
+}
+
+header .right-nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 5rem;
+}
+
+.right-nav li {
+  list-style: none;
+  margin-left: 0.1rem;
+}
+
+.right-nav a {
+  color: var(--light);
+  text-decoration: none;
+  padding : 0.25rem 0.5rem;
+}
+
+.right-nav a:hover {
+  text-decoration: underline;
+}
+
+.right-nav li a {
+  color: var(--light);
+  text-decoration: none;
+  font-weight: bold;
 }
 
 
@@ -221,15 +277,24 @@ input:focus {
 }
 
 .container {
-  width: 85%;
+  padding: 1rem;
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+}
+
+.container.my-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .flex-row {
   display: flex;
   flex-wrap: wrap;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
 }
 
 .space-between {
@@ -238,6 +303,56 @@ input:focus {
 
 .flex-end {
   justify-content: flex-end;
+}
+
+.product-detail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.product-image {
+  flex: 1 1 50%;
+  max-width: 50%;
+}
+
+.product-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-info {
+  flex: 1 1 50%;
+  max-width: 50%;
+}
+
+.product-info h2 {
+  margin-top: 0;
+}
+
+.product-info p {
+  font-size: 1.1rem;
+  margin-top: 0;
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.btn-group button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-group button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
 }
 
 .mx-1 {
@@ -283,17 +398,18 @@ input:focus {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0 -10px; /* Adjust margin to handle spacing between cards */
+  margin: 10px; /* Adjust margin to handle spacing between cards */
+  padding: 10px;
 }
 
 .card {
-  width: 25%;
+  width: calc(25% - 45px);
   text-align: center;
   transition: transform 0.2s ease-in-out;
   border: 1px solid #ddd;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 10 px; /* Add some margin to separate the cards */
+  margin: 20px; /* Add some margin to separate the cards */
   padding: 16px;
 }
 .card img {
@@ -302,12 +418,13 @@ input:focus {
 }
 
 .card:hover {
-  transform: scale(1.05); /* Slightly scale up the entire card */
+  transform: scale(1.2); /* Slightly scale up the entire card */
 }
 
 .card:hover img {
   transform: scale(1.1); /* Slightly scale up the image */
 }
+
 
 .error-text {
   color: var(--error);
@@ -318,10 +435,29 @@ div #category{
   width:85%;
 }
 
-@media screen and (max-width: 768px) {
-  .card {
-    width: 100%;
+@media (max-width: 768px) {
+  .product-detail {
+    flex-direction: column;
   }
+
+  .product-image,
+  .product-info {
+    max-width: 100%;
+  }
+
+  .btn-group {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+}
+
+/* Spinner styles */
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 
