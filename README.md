@@ -7,7 +7,7 @@
 -[Demo](#demo)
 -[Installation](#installation)
 -[Usage](#usage)
--[PWA Functionality](#PWA-Functionality)
+-[PWA Functionality](#pwa-functionality)
 -[Technologies Used](#technologies-used)
 -[Contributing](#contributing)
 -[License](#license)
