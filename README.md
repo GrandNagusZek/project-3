@@ -4,17 +4,24 @@
 ## Table of Contents
 
 -[Features](#features)
+
 -[Demo](#demo)
+
 -[Installation](#installation)
+
 -[Usage](#usage)
+
 -[PWA Functionality](#pwa-functionality)
+
 -[Technologies Used](#technologies-used)
+
 -[Contributing](#contributing)
+
 -[License](#license)
 
 ## Introduction
 
-Welcome to the AthleticMia E-commerce site! This project is a modern, responsive web application built using React and Vite, designed to provide users with an intuitive and seamless shopping experience for home gym and exercise equipment.
+Welcome to the AthleticMia E-commerce site! This project is a modern, responsive web application built using React and Vite, designed to provide users with an intuitive and seamless shopping experience for home gym and exercise equipment. Our motivation for this project was to provide a more curated online shopping experience for those who are more serious fitness enthusiasts or people building the own home gyms. Building an e-commerce site that sells home gym and exercise equipment, especially with PWA functionality, involves a variety of lessons across different domains of web development and project management. This included Frontend Development with React and Vite, PWA Development, Backend Development, Deployment, Design and UX, as well as Project Management and Collaboration. 
 
 
 ## Features
@@ -48,6 +55,13 @@ Check out the live demo: https://project-3-3oll.onrender.com
 
 Once the development server is running, you can access the application at http://localhost:3000. 
 The application will automatically reload if you make changes to the source files.
+
+![alt text](assets/images/Screenshot%20AthleticMia.png)
+![alt text](assets/images/Screenshot%20AthleticMia%20Signup.png)
+![alt text](assets/images/Screenshot%20AthleticMia%20login.png)
+
+
+
 
 ## PWA Functionality
 
